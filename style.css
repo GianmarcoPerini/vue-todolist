@@ -1,3 +1,60 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.titol{
+    font-size: 5em;
+    padding-bottom: 50px;
+}
+
 .under{
-    text-decoration: line-through
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+
+.input-button{
+    background-color: goldenrod;
+    border:3px outset rgb(233, 183, 56) 
+}
+
+.input-button:active{
+    border:3px inset rgb(233, 183, 56) 
+}
+
+.list-item{
+    /* background-color: red; */
+    height: 400px;
+}
+
+.date-list{
+    color: white;
+    font-weight: bold;
+}
+
+.cross{
+    color: rgb(218, 0, 0);
+    background-color: rgb(143, 0, 0);
+    padding: 5px;
+    border: 3px outset rgb(109, 0, 0);
+}
+
+.cross:active{
+    border: 3px inset rgb(143, 0, 0);
+}
+
+.check{
+    color: rgb(39, 153, 39);
+    background-color: rgb(147, 206, 60);
+    padding: 5px;
+    border: 3px outset rgb(147, 206, 60);
+}
+
+.check:active{
+    border: 3px inset rgb(147, 206, 60);
+}
+
+
+#root{
+    background-color: rgb(238, 162, 49)
 }
