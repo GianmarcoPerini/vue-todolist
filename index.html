@@ -17,9 +17,10 @@
         <input type="text" placeholder="Inserisci i tuoi impegni" v-model="things" @keyup.enter="add(things)">
         <button @click="add(things)" @click="under">faai</button>
         <div class="list" v-if="toDo.length <= 0">{{great}}</div>
-        <div class="list" v-else v-for="(obj, index) in toDo" @click="isActive" :class="(obj.active == true) ? 'under' : '' "> 
-            {{obj.things}} 
-            <i class="fas fa-times-circle ms-5" @click="remove(index)"></i>
+        <div class="list d-flex align-items-center" v-else v-for="(obj, index) in toDo" >
+            <div :class="(obj.active == true) ? 'under' : '' ">{{obj.things}}</div>
+            <i class="fas fa-times-circle ms-5" @click="remove(index)" :class="(obj.active == true) ? 'null' : 'undefined' "></i>
+            <i class="fas fa-check ms-5" @click="obj.active = !obj.active" ></i>
         </div>
     </div>
 

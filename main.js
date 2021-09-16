@@ -1,7 +1,20 @@
 let app = new Vue({
     el: '#root',
     data:{
-        toDo:[],
+        toDo:[
+            obj = {
+                things: 'ciao',
+                active: false,
+            },
+            obj = {
+                things: 'ciao',
+                active: false,
+            },
+            obj = {
+                things: 'ciao',
+                active: false,
+            },
+        ],
         things: '',
         great: 'Non hai impegni',
         under: 'line-through'
@@ -24,9 +37,10 @@ let app = new Vue({
             this.toDo.splice(x, 1)
         },
 
-        isActive: function(){
-            this.active = true
-            console.log(this.active);
+        isActive: function(x){
+            // x.active = true
+            // console.log(x.active);
+            // console.log(x.active);
         }
     },
 })
