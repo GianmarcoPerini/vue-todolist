@@ -23,7 +23,8 @@
 }
 
 .list-item{
-    /* background-color: red; */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
     height: 400px;
 }
 
