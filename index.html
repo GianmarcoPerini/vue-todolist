@@ -13,6 +13,13 @@
 <body>
 
 
+    <div id="root">
+        <h1>To Do List</h1>
+        <input type="text" placeholder="Inserisci i tuoi impegni" v-model="things" @keyup.enter="add(things)">
+        <button @click="add(things)" @click="under">faai</button>
+        <div class="list" v-if="toDo.length <= 0">{{great}}</div>
+        <div class="list" v-else v-for="(element, index) in toDo" @click=""> {{index + 1}}) {{element}} <i class="fas fa-times-circle ms-5" @click="remove(index)"></i></div>
+    </div>
 
     <script src="main.js"></script>
 </body>
