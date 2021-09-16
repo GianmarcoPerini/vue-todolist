@@ -1,7 +1,7 @@
 let app = new Vue({
     el: '#root',
     data:{
-        toDo:['prova1','prova2','prova3'],
+        toDo:[],
         things: '',
         great: 'Non hai impegni',
         under: 'line-through'
@@ -11,12 +11,22 @@ let app = new Vue({
     methods: {
         add: function(x){
             if(this.things.trim().length > 0 ){
-            this.toDo.push(x)
+                obj = {
+                    things: x,
+                    active: false,
+                }
+            this.toDo.push(obj)
             this.things = ''
             } 
         },
+        
         remove: function(x){
             this.toDo.splice(x, 1)
         },
+
+        isActive: function(){
+            this.active = true
+            console.log(this.active);
+        }
     },
 })
